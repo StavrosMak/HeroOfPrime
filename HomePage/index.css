@@ -1,0 +1,302 @@
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 150px auto;
+    padding-bottom: 2.5rem;
+}
+
+.homeContent h3 {
+    font: 900 50px/62px Roboto;
+    color: #A4A0A0;
+    padding: 20px 0;
+}
+
+.questBox {
+    padding: 10px;
+    background: rgba(155, 153, 168, 0.10) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 6px;
+    max-width: 1200px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+}
+
+.leftSide-questBox {
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 35px;
+    border: 2px solid #403B3B;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 250px;
+    height: 304px;
+}
+
+.imgContainer img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.infoContainer {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.leftSide-questBox .heroTitle {
+    word-break: break-word;
+    color: #D3A842;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #403B3B;
+    margin: 20px 0;
+    padding: 5px 0;
+}
+
+.leftSide-questBox .heroText {
+    font: 16px/20px Roboto;
+    color: #AC9B77;
+}
+
+.line,
+.line2 {
+    position: relative;
+    width: 1px;
+    background-color: #403B3B;
+    max-height: 100px;
+    height: 100%;
+}
+
+.line {
+    bottom: 50px;
+    left: 100px;
+}
+
+.line2 {
+    bottom: 50px;
+    left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 1px;
+    width: 350px;
+}
+
+.iconCard {
+    width: 200px !important;
+    height: 60px !important;
+    display: flex;
+    position: relative;
+    bottom: 31px;
+}
+
+.rightSide-questBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.fightTitle {
+    font: 900 28px/44px Roboto;
+    color: #A4A0A0;
+}
+
+.acceptContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.acceptTitle {
+    font: 300 44px/50px Roboto;
+    color: #FFFFFF;
+}
+
+.acceptDescription {
+    font: 26px/32px Roboto;
+    color: #FFFFFF;
+}
+
+.acceptBtn {
+    width: 80%;
+    padding: 5px;
+    align-self: center;
+    margin: 8px;
+    font: 900 18px/22px Roboto;
+    background-color: #A7380E;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.acceptBtn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.acceptBtn:hover {
+    opacity: 0.8;
+}
+
+
+.healthAmount {
+   max-width: 43px;
+    max-height:45px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    top: 230px;
+    left: -68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent radial-gradient(closest-side at 50% 50%, #FB1D59 0%, #48091B 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px -4px 5px #FCDE4840, 0px 2px 6px #000000CC;
+}
+
+
+.iconText {
+    position: relative;
+    bottom: 12px;
+    right: 43px;
+    font: normal normal 900 22px/22px Roboto;
+    letter-spacing: 0px;
+    color: #AC9B77;
+}
+
+
+@media screen and (max-width: 992px) {
+    .homeContent {
+        padding: 10px;
+        width: 100%;
+
+    }
+
+    .iconText {
+        right: 35px;
+    }
+
+    .healthAmount {
+        left: -40px;
+        top: 200px;
+    }
+
+    .leftSide-questBox {
+        padding: 5px;
+    }
+
+    .imgContainer {
+        width: 150px;
+    }
+
+    .line {
+        left: 70px;
+        bottom: 80px;
+    }
+
+    .line2 {
+        left: 70px;
+        bottom: 80px;
+        max-width: 290px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .questBox {
+        flex-direction: column;
+        max-height: 800px;
+        height: 100%;
+        background-attachment: blue;
+    }
+
+    .leftSide-questBox {
+        height: 1200px;
+    }
+
+    .line2 {
+        width: 300px;
+    }
+
+    .imgContainer {
+        max-width: 150px;
+        width: 100%;
+    }
+
+    .imgContainer img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .line {
+        max-height: 180px;
+        left: 55px;
+        bottom: 95px;
+    }
+
+    .line2 {
+        left: 54px;
+        bottom: 95px;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: 250px;
+    }
+
+    .iconCard {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .iconText{
+        right: 40px;
+        bottom: 17px;
+    }
+
+
+    .leftSide-questBox .heroTitle {
+        font-size: 16px;
+    }
+
+    .homeContent h3 {
+        font-size: 36px;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .homeContent {
+        height: 100%;
+        
+    }
+
+
+    .questBox {
+        max-height: 950px;
+        padding: 5px;
+        gap: 0;
+    }
+
+  
+}

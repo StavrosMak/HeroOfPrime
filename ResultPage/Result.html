@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../globalStyle.css">
+    <link rel="stylesheet" href="./Result.css">
+    <script src="../Templates/Templates.js"></script>
+    <title>Result Page</title>
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="resultContent">
+        <div class="resultHeader"><h3>Time to gather your party</h3></div>
+        <div class="opponentTeamSection"><h3>The opponent Team</h3></div>
+        <div class="yourTeamSection"><h3>Your team</h3></div>
+        <div class="resultStats"></div>
+    </div>
+    <div id="footer-placeholder"></div>
+    
+    <script src="../API/useAPI.js"></script>
+    <script src="./Result.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = generateNavbar();
+            const footer = generateFooter();
+            document.getElementById('navbar-placeholder').innerHTML = navbar;
+            document.getElementById('footer-placeholder').innerHTML = footer;
+        });
+    </script>
+</body>
+
+</html>

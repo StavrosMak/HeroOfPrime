@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.chooseContent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font: normal normal 900 50px/62px Roboto;
+    color: #A4A0A0;
+}
+
+.chooseHeader {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: transparent linear-gradient(180deg, #26D6491F 0%, #001C3D 100%) 0% 0% no-repeat padding-box;
+}
+
+.chooseHeader h3 {
+    max-width: 1200px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.chooseYourHeroSection {
+
+    background: transparent linear-gradient(180deg, #06002000 0%, #060020B3 100%) 0% 0% no-repeat padding-box;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.chooseYourHeroSection p:first-child,
+.selectMinions h3 {
+    font: normal normal normal 34px/41px Roboto;
+    letter-spacing: 0px;
+    color: #AC9B77;
+    border-bottom: 1px solid #AC9B77;
+}
+
+.chooseYourHeroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.chooseHeroContainer {
+    display: flex;
+    border-radius: 6px;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.chooseHeroContainer .rightSideChoose {
+    width: 100%;
+}
+
+.chooseHeroContainer select {
+    outline: none;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    background: #9B99A81F 0% 0% no-repeat padding-box;
+    font: normal normal bold 24px/29px Roboto;
+    color: #D3A842;
+
+}
+
+
+.chooseImg {
+
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#heroDescription {
+    font: normal normal normal 16px/20px Roboto;
+    padding: 50px 0;
+    color: #AC9B77;
+}
+
+
+.selectMinions {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    gap: 100px;
+    margin: auto;
+
+}
+
+.selectMinionsContent {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cardContainer {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardImg {
+    transition:  transform 1s ease;
+    transform: rotateY(180deg);
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardImg:hover {
+    transition: scale .5s , transform 1s ease;
+    scale: 1.05;
+}
+
+.cardOpen {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.battleSection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.battleSection p {
+    font: normal normal normal 26px/32px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.toBattleBtn {
+    background: #A7380E 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal 900 18px/22px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 250px;
+    height: 40px;
+}
+
+.battleSection a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toBattleBtn:disabled {
+    opacity: 0.5;
+}
+
+.battleSection a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+.loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+    z-index: 999;
+}
+
+.loading span , .loading p {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+
+
+.healthAmount {
+    max-width: 43px;
+    max-height: 45px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    bottom: 40px;
+    left: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    background: transparent radial-gradient(closest-side at 50% 50%, #FB1D59 0%, #48091B 100%) 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    box-shadow: inset 3px -4px 5px #FCDE4840, 0px 2px 6px #000000CC;
+}
+
+@media screen and (max-width: 992px) {
+
+    .healthAmount {
+        bottom: 45px;
+        left: 140px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .healthAmount {
+         bottom: 65px;
+        left: 140px;
+    }
+
+    .chooseHeader {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .battleSection {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .healthAmount {
+         bottom: 65px;
+        left: 125px;
+    }
+
+   
+}
+
+@media screen and (max-width: 570px) {
+
+    .healthAmount {
+        bottom: 75px;
+        left: 120px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .healthAmount {
+        bottom: 75px;
+        left: 100px;
+    }
+
+}

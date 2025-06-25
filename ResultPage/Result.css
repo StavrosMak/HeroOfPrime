@@ -1,0 +1,182 @@
+.resultContent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font: normal normal 900 50px/62px Roboto;
+    color: #A4A0A0;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+.resultHeader {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: transparent linear-gradient(180deg, #26D6491F 0%, #001C3D 100%) 0% 0% no-repeat padding-box;
+    padding-bottom: 50px;
+}
+
+.resultHeader h3 {
+    justify-self: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.yourTeamSection {
+    background: linear-gradient(180deg, #060020B3 0%, #06002000 100%) 0% 0% no-repeat padding-box;
+}
+
+.opponentTeamSection,
+.yourTeamSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+.leaderSection {
+    justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.enemyMinions,
+.yourMinions {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opponentTeamSection h3,
+.yourTeamSection h3 {
+    font: normal normal normal 34px/41px Roboto;
+    max-width: 1200px;
+    color: #AC9B77;
+    border-bottom: 1px solid #AC9B77;
+    width: 100%;
+}
+
+.minionImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.minionImg {
+    width: 300px;
+    height: 350px;
+}
+
+
+.heroImg {
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.resultStats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px 0;
+    gap: 50px;
+    max-width: 1200px;
+    min-height: 200px;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    background: #9B99A81A 0% 0% no-repeat padding-box;
+    padding: 10px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.leftSideResult {
+    font: normal normal 100 60px/72px Roboto;
+
+    border: 1px solid #403B3B;
+    max-width: 50%;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victory {
+    color: #07BA0F;
+    text-shadow: 5px 5px 25px #B9DB47A6;
+}
+
+.defeat {
+    color: #F13756;
+    text-shadow: 5px 5px 25px #FF80BBA6;
+}
+
+.rightSideResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightSideResult h4 {
+    font: normal normal 900 28px/44px Roboto;
+    color: #A4A0A0;
+    padding: 10px 0;
+
+}
+
+.rightSideResult p:first-of-type {
+    font: normal normal 300 44px/50px Roboto;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.rightSideResult p:last-child {
+    font: normal normal normal 26px/32px Roboto;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:900px) {
+
+    .resultStats {
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .resultHeader {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .battleSection {
+        text-align: center;
+    }
+
+    .resultStats {
+        text-align: center;
+    }
+
+    .opponentTeamSection,
+    .yourTeamSection {
+        text-align: center;
+    }
+}

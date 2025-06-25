@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../globalStyle.css">
+  <link rel="stylesheet" href="./Choose.css">
+  <script src="../Templates/Templates.js"></script>
+  <title>Choose your Team</title>
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <div class="chooseContent">
+    <div id="loadingIndicator" class="loading">Loading data...<span>Please wait...</span><p>**Read Readme.md</p></div>
+    <div class="chooseHeader">
+      <h3>Time to gather your party</h3>
+    </div>
+    <div class="chooseYourHeroSection">
+      <div class="chooseYourHeroContent">
+        <p>Choose your hero</p>
+        <div class="chooseHeroContainer">
+          <div class="leftSideChoose">
+            <div class="chooseImg">
+              <img id="heroImage" alt="" src="" />
+            </div>
+            <div class="healthAmount"></div>
+          </div>
+          <div class="rightSideChoose">
+            <select title="heroes" id="heroSelect"></select>
+            <p id="heroDescription"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="selectMinions">
+      <h3>Summon your minions</h3>
+      <div class="selectMinionsContent">
+      </div>
+      <div class="battleSection">
+        <p>Get your buffs, flasks, potions and...</p>
+        <a href="/ResultPage/Result.html" class="toBattleBtn disabled">Battle</a>
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+
+    <script src="../API/useAPI.js"></script>
+    <script src="./Choose.js"></script>
+</body>
+
+</html>
